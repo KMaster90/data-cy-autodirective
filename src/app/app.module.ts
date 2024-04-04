@@ -3,11 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { TooltipDirective } from './tooltip.directive';
+import { DataCyDirective } from './data-cy.directive';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, TooltipDirective],
+  declarations: [AppComponent, DataCyDirective],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
