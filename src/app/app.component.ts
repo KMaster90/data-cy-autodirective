@@ -22,18 +22,16 @@ import { Component } from '@angular/core';
 
     <div>
       <ul>
-        @for(item of items; let i = $index){
-          <li [id]="i">
-            {{ i }} Member: {{ item.name | json }}
+        @for(item of items;track $index){
+          <li [id]="$index">
+            {{ $index }} Member: {{ item.name | json }}
           </li>
         }
-        <ng-template>
-        @for(item of items; let i = $index){
+        @for(item of items;track $index){
           <li class="mario">
-            {{ i }} Member: {{ item.name | json }}
+            {{ $index }} Member: {{ item.name | json }}
           </li>
         }
-        </ng-template>
       </ul>
     </div>
   `,
